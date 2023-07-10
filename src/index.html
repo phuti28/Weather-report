@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGM91rCGa5gtU4mK92HdvYe+M/SXH301p5ILY+dN9+njOz" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@2oo,400&family=Roboto&display=swab"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="weather-app">
+
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="of"
+                            id="city-input" class="form-control shadow-sm">
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="search" class="form-control btn btn-primary shadow-sm w-100">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-success w-100" id="current-location-button">
+                            Current
+                        </button>
+                    </div>
+                </div>
+            </form>
+            </br>
+            <h1 id="city">
+                Zeerust
+            </h1>
+            <h2>
+                <img src="images/partly cloudy.png" />
+                <ul>
+                    <li id="date">
+                    </li>
+                    <li id="description">
+                        clear
+                    </li>
+                </ul>
+            </h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <div class="float-left">
+                            <span class="temperature" id="temperature">
+                                20
+                            </span>
+                            <span class="units">
+                                °C
+                            </span>
+                            <div class="col-6">
+                                <ul>
+                                    <li>
+                                        Humidity:
+                                        <span id="humidity">
+                                            25
+                                        </span>
+                                        %
+                                    </li>
+                                    <li>
+                                        Wind speed:
+                                        <span id="wind">
+                                            5
+                                        </span>
+                                        km/h
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="forecast-day">
+                                Mon
+                                <br />
+                                <img src="images/clear.png">
+                                23°8°
+                            </div>
+                            <div class="forecast-day">
+                                Tue
+                                <br />
+                                <img src="images/scattered showers.png">
+                                22°9°
+                            </div>
+                            <div class="forecast-day">
+                                Wed
+                                <br />
+                                <img src="images/partly cloudy.png">
+                                21°20°
+                            </div>
+                            <div class="forecast-day">
+                                Thur
+                                <br />
+                                <img src="images/clear.png">
+                                21°30°
+                            </div>
+                            <div class="forecast-day">
+                                Fri
+                                <br />
+                                <img src="images/partly cloudy.png">
+                                24°8°
+                            </div>
+                        </div>
+                        <small>
+                            a href ="https://github.com/phuti28/weather-report.git"target="-blank">
+                            Open-source code</a>", by Phuti Moketla"
+                        </small>
+                    </div>
+                    <script src="src/index.js" type="module"></script>
+</body>
+
+</html>
