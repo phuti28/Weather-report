@@ -53,6 +53,18 @@ li {
     list-style: none;
 }
 
+a{
+    color:#007bff;
+    text-decoration:none;
+    background-color:transparent;
+}
+
+.small, small{
+    font-size:80%;
+    font-weight:400;margin:0 auto;
+    text-align:left;
+}
+
 .w-100 {
     width: 100;
 }
